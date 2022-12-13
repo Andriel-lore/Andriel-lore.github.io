@@ -1,0 +1,70 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/common/[root]/index.html
+$dokka.location:/IensoConst///PointingToDeclaration/common/[root]/-ienso-const/index.html
+$dokka.location:/IensoConst/clientHost/#/PointingToDeclaration/common/[root]/-ienso-const/client-host.html
+$dokka.location:/IensoConst/clientSecret/#/PointingToDeclaration/common/[root]/-ienso-const/client-secret.html
+$dokka.location:com.ienso.core.network.webrtc.modular/PeerConnectionManager/addRemoteIceCandidate/#kotlin.String#kotlin.Int#kotlin.String/PointingToDeclaration/core/com.ienso.core.network.webrtc.modular/-peer-connection-manager/[desktop]add-remote-ice-candidate.html
+$dokka.location:com.ienso.core.network.webrtc.modular/PeerConnectionManager/closePeerConnection/#/PointingToDeclaration/core/com.ienso.core.network.webrtc.modular/-peer-connection-manager/[desktop]close-peer-connection.html
+$dokka.location:com.ienso.core.network.webrtc.modular/PeerConnectionManager/createOffer/#kotlin.Function2[kotlin.String,kotlin.String,kotlin.Unit]/PointingToDeclaration/core/com.ienso.core.network.webrtc.modular/-peer-connection-manager/[desktop]create-offer.html
+$dokka.location:com.ienso.core.network.webrtc.modular/PeerConnectionManager/registerListener/#com.ienso.common.webrtc.IPeerConnectionManager.Listener/PointingToDeclaration/core/com.ienso.core.network.webrtc.modular/-peer-connection-manager/[desktop]register-listener.html
+$dokka.location:com.ienso.core.network.webrtc.modular/PeerConnectionManager/setRemoteDescription/#kotlin.String#kotlin.String/PointingToDeclaration/core/com.ienso.core.network.webrtc.modular/-peer-connection-manager/[desktop]set-remote-description.html
+$dokka.location:com.ienso.core.network.webrtc.modular/PeerConnectionManager/setWebRtcPreferences/#com.ienso.common.webrtc.WebRtcPreferences/PointingToDeclaration/core/com.ienso.core.network.webrtc.modular/-peer-connection-manager/[desktop]set-web-rtc-preferences.html
+module:androidui
+com.ienso.androidui
+com.ienso.androidui.dialogs
+com.ienso.androidui.extension
+com.ienso.androidui.webrtc
+com.ienso.androidui.wifi
+module:common
+com.ienso.common
+com.ienso.common.di
+com.ienso.common.extension
+com.ienso.common.network.dto
+com.ienso.common.network.dto.devicemanager
+com.ienso.common.network.dto.member
+com.ienso.common.network.dto.signaling
+com.ienso.common.network.model
+com.ienso.common.network.model.devicemanager
+com.ienso.common.network.model.invitations
+com.ienso.common.network.model.login
+com.ienso.common.network.model.space
+com.ienso.common.network.usecases
+com.ienso.common.webrtc
+com.ienso.cross.sdk
+module:core
+com.ienso.core
+com.ienso.core.annotaions
+com.ienso.core.di
+com.ienso.core.extension
+com.ienso.core.network
+com.ienso.core.network.api
+com.ienso.core.network.dto.auth
+com.ienso.core.network.dto.devicemanager
+com.ienso.core.network.dto.invitations
+com.ienso.core.network.dto.member
+com.ienso.core.network.dto.space
+com.ienso.core.network.usecases
+com.ienso.core.network.usecases.auth
+com.ienso.core.network.usecases.devicemanager
+com.ienso.core.network.usecases.invitations
+com.ienso.core.network.usecases.member
+com.ienso.core.network.usecases.space
+com.ienso.core.network.webrtc
+com.ienso.core.network.webrtc.modular
+com.ienso.core.storage
+com.ienso.core.utils
+com.ienso.cross.sdk
+module:sdk
+com.ienso.cross.annotations
+com.ienso.cross.di
+com.ienso.cross.di.modules
+com.ienso.cross.sdk
+module:ui-android
+com.ienso.ui_android.webrtc
+com.ienso.ui_android.webrtc.broadcast
+com.ienso.ui_android.webrtc.consume
+com.ienso.ui_android.webrtc.extension
+com.ienso.ui_android.webrtc.modular
+com.ienso.ui_android.webrtc.peerconnection
+com.ienso.ui_android.webrtc.signalingserver
