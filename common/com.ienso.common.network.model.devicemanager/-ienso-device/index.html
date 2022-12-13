@@ -1,0 +1,482 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>IensoDevice</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>ienso</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":ienso:common:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="common::com.ienso.common.network.model.devicemanager/IensoDevice///PointingToDeclaration//-682625028">
+  <div class="breadcrumbs"><a href="../../index.html">common</a><span class="delimiter">/</span><a href="../index.html">com.ienso.common.network.model.devicemanager</a><span class="delimiter">/</span><span class="current">IensoDevice</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Ienso</span><wbr><span><span>Device</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">IensoDevice</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>active<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>aiPreview<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>connectionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>deviceId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>deviceName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>deviceSerialNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>deviceTypeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>deviceTypeName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>features<span class="token operator">: </span><a href="../-features/index.html">Features</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>firmware<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>firmwareLastUpdated<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>iqSettings<span class="token operator">: </span><a href="../-iq-settings/index.html">IqSettings</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>lastLiveStream<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>logs<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-log/index.html">Log</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>numOfErrors<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>numOfWarnings<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ownerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>realmName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>settings<span class="token operator">: </span><a href="../-settings/index.html">Settings</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>spaceId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>status<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>thumbnailUrl<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>timeZone<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>webSocketId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span> : <a href="../../com.ienso.common.network.model/-base-model/index.html">BaseModel</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="206210004%2FConstructors%2F-682625028" anchor-label="IensoDevice" id="206210004%2FConstructors%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-ienso-device.html"><span>Ienso</span><wbr><span><span>Device</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="206210004%2FConstructors%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-ienso-device.html"><span class="token function">IensoDevice</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">active<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">aiPreview<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">connectionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">deviceId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">deviceName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">deviceSerialNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">deviceTypeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">deviceTypeName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">features<span class="token operator">: </span><a href="../-features/index.html">Features</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">firmware<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">firmwareLastUpdated<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">iqSettings<span class="token operator">: </span><a href="../-iq-settings/index.html">IqSettings</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">lastLiveStream<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">logs<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-log/index.html">Log</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">numOfErrors<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">numOfWarnings<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">ownerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">realmName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">settings<span class="token operator">: </span><a href="../-settings/index.html">Settings</a><span class="token punctuation">, </span></span><span class="parameter ">spaceId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">status<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">thumbnailUrl<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span><span class="token punctuation">, </span></span><span class="parameter ">timeZone<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">webSocketId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="89186396%2FFunctions%2F-682625028" anchor-label="toJson" id="89186396%2FFunctions%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-json.html"><span>to</span><wbr><span><span>Json</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="89186396%2FFunctions%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-json.html"><span class="token function">toJson</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-269477997%2FFunctions%2F-682625028" anchor-label="toString" id="-269477997%2FFunctions%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="to-string.html"><span>to</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-269477997%2FFunctions%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="1333179577%2FProperties%2F-682625028" anchor-label="active" id="1333179577%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="active.html"><span><span>active</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1333179577%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="1333179577%2FProperties%2F-682625028" anchor-label="active" id="1333179577%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="active.html">active</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="496608443%2FProperties%2F-682625028" anchor-label="aiPreview" id="496608443%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="ai-preview.html"><span>ai</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="496608443%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="496608443%2FProperties%2F-682625028" anchor-label="aiPreview" id="496608443%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="ai-preview.html">aiPreview</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-26325754%2FProperties%2F-682625028" anchor-label="connectionId" id="-26325754%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="connection-id.html"><span>connection</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-26325754%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="-26325754%2FProperties%2F-682625028" anchor-label="connectionId" id="-26325754%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="connection-id.html">connectionId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="398717838%2FProperties%2F-682625028" anchor-label="deviceId" id="398717838%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="device-id.html"><span>device</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="398717838%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="398717838%2FProperties%2F-682625028" anchor-label="deviceId" id="398717838%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="device-id.html">deviceId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1817022750%2FProperties%2F-682625028" anchor-label="deviceName" id="1817022750%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="device-name.html"><span>device</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1817022750%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="1817022750%2FProperties%2F-682625028" anchor-label="deviceName" id="1817022750%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="device-name.html">deviceName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-507915892%2FProperties%2F-682625028" anchor-label="deviceSerialNumber" id="-507915892%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="device-serial-number.html"><span>device</span><wbr><span>Serial</span><wbr><span><span>Number</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-507915892%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="-507915892%2FProperties%2F-682625028" anchor-label="deviceSerialNumber" id="-507915892%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="device-serial-number.html">deviceSerialNumber</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1054969356%2FProperties%2F-682625028" anchor-label="deviceTypeId" id="-1054969356%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="device-type-id.html"><span>device</span><wbr><span>Type</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1054969356%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="-1054969356%2FProperties%2F-682625028" anchor-label="deviceTypeId" id="-1054969356%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="device-type-id.html">deviceTypeId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="688000516%2FProperties%2F-682625028" anchor-label="deviceTypeName" id="688000516%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="device-type-name.html"><span>device</span><wbr><span>Type</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="688000516%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="688000516%2FProperties%2F-682625028" anchor-label="deviceTypeName" id="688000516%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="device-type-name.html">deviceTypeName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-426016030%2FProperties%2F-682625028" anchor-label="features" id="-426016030%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="features.html"><span><span>features</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-426016030%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="-426016030%2FProperties%2F-682625028" anchor-label="features" id="-426016030%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="features.html">features</a><span class="token operator">: </span><a href="../-features/index.html">Features</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1978484956%2FProperties%2F-682625028" anchor-label="firmware" id="-1978484956%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="firmware.html"><span><span>firmware</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1978484956%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="-1978484956%2FProperties%2F-682625028" anchor-label="firmware" id="-1978484956%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="firmware.html">firmware</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1368704113%2FProperties%2F-682625028" anchor-label="firmwareLastUpdated" id="1368704113%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="firmware-last-updated.html"><span>firmware</span><wbr><span>Last</span><wbr><span><span>Updated</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1368704113%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="1368704113%2FProperties%2F-682625028" anchor-label="firmwareLastUpdated" id="1368704113%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="firmware-last-updated.html">firmwareLastUpdated</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1134507788%2FProperties%2F-682625028" anchor-label="iqSettings" id="-1134507788%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="iq-settings.html"><span>iq</span><wbr><span><span>Settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1134507788%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="-1134507788%2FProperties%2F-682625028" anchor-label="iqSettings" id="-1134507788%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="iq-settings.html">iqSettings</a><span class="token operator">: </span><a href="../-iq-settings/index.html">IqSettings</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="379881085%2FProperties%2F-682625028" anchor-label="lastLiveStream" id="379881085%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="last-live-stream.html"><span>last</span><wbr><span>Live</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="379881085%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="379881085%2FProperties%2F-682625028" anchor-label="lastLiveStream" id="379881085%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="last-live-stream.html">lastLiveStream</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1266185904%2FProperties%2F-682625028" anchor-label="logs" id="1266185904%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="logs.html"><span><span>logs</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1266185904%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="1266185904%2FProperties%2F-682625028" anchor-label="logs" id="1266185904%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="logs.html">logs</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-log/index.html">Log</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="562748147%2FProperties%2F-682625028" anchor-label="numOfErrors" id="562748147%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="num-of-errors.html"><span>num</span><wbr><span>Of</span><wbr><span><span>Errors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="562748147%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="562748147%2FProperties%2F-682625028" anchor-label="numOfErrors" id="562748147%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="num-of-errors.html">numOfErrors</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1958864057%2FProperties%2F-682625028" anchor-label="numOfWarnings" id="-1958864057%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="num-of-warnings.html"><span>num</span><wbr><span>Of</span><wbr><span><span>Warnings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1958864057%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="-1958864057%2FProperties%2F-682625028" anchor-label="numOfWarnings" id="-1958864057%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="num-of-warnings.html">numOfWarnings</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1147454285%2FProperties%2F-682625028" anchor-label="ownerId" id="1147454285%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="owner-id.html"><span>owner</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1147454285%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="1147454285%2FProperties%2F-682625028" anchor-label="ownerId" id="1147454285%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="owner-id.html">ownerId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1991795393%2FProperties%2F-682625028" anchor-label="realmName" id="1991795393%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="realm-name.html"><span>realm</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1991795393%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="1991795393%2FProperties%2F-682625028" anchor-label="realmName" id="1991795393%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="realm-name.html">realmName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1753859652%2FProperties%2F-682625028" anchor-label="settings" id="-1753859652%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="settings.html"><span><span>settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1753859652%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="-1753859652%2FProperties%2F-682625028" anchor-label="settings" id="-1753859652%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="settings.html">settings</a><span class="token operator">: </span><a href="../-settings/index.html">Settings</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1019635994%2FProperties%2F-682625028" anchor-label="spaceId" id="1019635994%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="space-id.html"><span>space</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1019635994%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="1019635994%2FProperties%2F-682625028" anchor-label="spaceId" id="1019635994%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="space-id.html">spaceId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-68483763%2FProperties%2F-682625028" anchor-label="status" id="-68483763%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="status.html"><span><span>status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-68483763%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="-68483763%2FProperties%2F-682625028" anchor-label="status" id="-68483763%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="status.html">status</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1051207684%2FProperties%2F-682625028" anchor-label="thumbnailUrl" id="-1051207684%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="thumbnail-url.html"><span>thumbnail</span><wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1051207684%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="-1051207684%2FProperties%2F-682625028" anchor-label="thumbnailUrl" id="-1051207684%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="thumbnail-url.html">thumbnailUrl</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1777665402%2FProperties%2F-682625028" anchor-label="timeZone" id="-1777665402%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="time-zone.html"><span>time</span><wbr><span><span>Zone</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1777665402%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="-1777665402%2FProperties%2F-682625028" anchor-label="timeZone" id="-1777665402%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="time-zone.html">timeZone</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1429643623%2FProperties%2F-682625028" anchor-label="webSocketId" id="-1429643623%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":ienso:common:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="web-socket-id.html"><span>web</span><wbr><span>Socket</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1429643623%2FProperties%2F-682625028"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:common:dokkaHtmlPartial/commonMain"><a data-name="-1429643623%2FProperties%2F-682625028" anchor-label="webSocketId" id="-1429643623%2FProperties%2F-682625028" data-filterable-set=":ienso:common:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="web-socket-id.html">webSocketId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+
