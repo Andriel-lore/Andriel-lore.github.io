@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>init</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script src="https://unpkg.com/kotlin-playground@1"></script><script src="https://unpkg.com/kotlin-playground@1"></script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>ienso</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="sdk::com.ienso.cross.sdk/IensoSdk/init/#[Error type: Unresolved type for AppPlatform]/PointingToDeclaration//1876802423">
+  <div class="breadcrumbs"><a href="../../index.html">sdk</a><span class="delimiter">/</span><a href="../index.html">com.ienso.cross.sdk</a><span class="delimiter">/</span><a href="index.html">IensoSdk</a><span class="delimiter">/</span><span class="current">init</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>init</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ienso:sdk:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="init.html"><span class="token function">init</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">appPlatform<span class="token operator">: </span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><p class="paragraph">Should be called when app started</p><h4 class="">Samples</h4><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import android.app.Application
+import androidx.test.core.app.ApplicationProvider
+import com.google.common.truth.Truth
+import com.ienso.common.di.AppPlatformAndroid
+import com.ienso.cross.annotations.SdkSample
+import com.ienso.cross.sdk.IensoSdk
+import org.junit.Test
+fun main() { 
+   //sampleStart 
+   //Android
+val baseUrl = "ienso.fake-client.com"
+val application = ApplicationProvider.getApplicationContext&lt;Application&gt;()
+val appPlatform = AppPlatformAndroid(application, baseUrl)
+val completed = IensoSdk.init(appPlatform)
+//Truth.assertThat(completed).isTrue()
+
+//The IensoSdk.init() will not completed, the code is good.
+//The application component running before the test and actually initiated the sdk (as real life scenario).
+//If the sdk initiated twice exception will be thrown and the function return false.
+Truth.assertThat(completed).isFalse() 
+   //sampleEnd
+}</code></pre></div><div class="sample-container"><pre><code class="runnablesample monospace block lang-kotlin" theme="idea">import com.ienso.common.di.AppPlatformDesktop
+import org.junit.Test
+fun main() { 
+   //sampleStart 
+   //desktop
+val baseUrl = "ienso.fake-client.com"
+val appPlatform = AppPlatformDesktop(baseUrl)
+val initCompleted = IensoSdk.init(appPlatform)
+assert(initCompleted) 
+   //sampleEnd
+}</code></pre></div><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":ienso:sdk:dokkaHtmlPartial/commonMain" data-filterable-set=":ienso:sdk:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>app</span><wbr><span><span>Platform</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Don't initiate AppPlatform directly, use inherited classed by platform (for android pass AppPlatformAndroid)</p></div></div></div></div></div></div></div></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+
